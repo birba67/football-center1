@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Football Center</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>⚽ FOOTBALL CENTER</h1>
+    <p>Il tuo centro statistiche calcistiche</p>
+  </header>
+
+  <main>
+
+    <section class="classifica-section">
+
+      <h2>🏆 Classifica Serie A</h2>
+
+      <div class="table-container">
+        <table>
+
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Squadra</th>
+              <th>Pt</th>
+              <th>PG</th>
+              <th>V</th>
+              <th>N</th>
+              <th>P</th>
+            </tr>
+          </thead>
+
+          <tbody id="classifica">
+          </tbody>
+
+        </table>
+      </div>
+
+      <p class="nota">
+        Classifica dimostrativa
+      </p>
+
+    </section>
+
+
+    <section class="risultati-section">
+
+      <h2>⚽ Inserisci un risultato</h2>
+
+      <form id="match-form">
+
+        <div class="match-inputs">
+
+          <select id="casa" required>
+            <option value="">Squadra casa</option>
+          </select>
+
+          <input
+            type="number"
+            id="gol-casa"
+            min="0"
+            placeholder="0"
+            required
+          >
+
+          <strong>VS</strong>
+
+          <input
+            type="number"
+            id="gol-ospite"
+            min="0"
+            placeholder="0"
+            required
+          >
+
+          <select id="ospite" required>
+            <option value="">Squadra ospite</option>
+          </select>
+
+        </div>
+
+        <button type="submit">
+          REGISTRA PARTITA
+        </button>
+
+        <p id="messaggio"></p>
+
+      </form>
+
+    </section>
+
+
+    <section class="storico-section">
+
+      <h2>📋 Ultimi risultati</h2>
+
+      <div id="risultati">
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    FOOTBALL CENTER © 2026
+  </footer>
+
+</body>
+</html>
